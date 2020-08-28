@@ -545,7 +545,7 @@ bool IGFX::processKext(KernelPatcher &patcher, size_t index, mach_vm_address_t a
 
 				if (orgRegWrite) {
 					(bklCoffeeFb ? orgCflWriteRegister32 : orgKblWriteRegister32) = orgRegWrite;
-					if(bklIceFb){
+					if (bklIceFb) {
 						orgIclWriteRegister32 = orgRegWrite;
 					}
 				} else {
